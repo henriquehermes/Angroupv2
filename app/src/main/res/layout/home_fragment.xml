@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/blura">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fd5023"
+        android:layout_below="@+id/profile_pic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="logoult"
+        android:text="Sair"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00ffffff"
+        android:textColor="#fd6017"
+        android:textStyle="italic"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnHora"
+        android:onClick="botao"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/hours"
+        android:layout_alignTop="@+id/btnCalen"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_alignEnd="@+id/tv_name" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnCalen"
+        android:background="@drawable/calendar"
+        android:layout_marginTop="56dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/btnNotas"
+        android:layout_alignStart="@+id/btnNotas" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnNotas"
+        android:background="@drawable/email"
+        android:layout_alignTop="@+id/btnTarefa"
+        android:layout_toLeftOf="@+id/logout_button"
+        android:layout_toStartOf="@+id/logout_button" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnTarefa"
+        android:background="@drawable/organization"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/logout_button"
+        android:layout_alignLeft="@+id/btnHora"
+        android:layout_alignStart="@+id/btnHora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Calendario"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/btnCalen"
+        android:layout_alignStart="@+id/btnCalen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tarefas"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btnNotas"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Notas"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/btnNotas"
+        android:layout_alignLeft="@+id/btnNotas"
+        android:layout_alignStart="@+id/btnNotas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Horarios"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_above="@+id/btnHora"
+        android:layout_alignLeft="@+id/btnHora"
+        android:layout_alignStart="@+id/btnHora" />
+
+</RelativeLayout>
